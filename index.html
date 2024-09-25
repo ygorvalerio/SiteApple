@@ -9,13 +9,13 @@
     <title>iPhone - Apple (BR)</title>
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <nav class="navigation">
             <a href="#"><img src="logo.png" alt="Logo" class="Logo"></a>
             <ul>
-                <li><a href="#">Mac</a></li>
+                <li><a>Mac</a></li>
                 <li><a href="#">iPad</a></li>
-                <li><a href="#" class="check">iPhone</a></li>
+                <li><a href="#" data-color="header-white" data-text-class="text-black" class="check">iPhone</a></li>
                 <li><a href="#">Watch</a></li>
                 <li><a href="#">AirPods</a></li>
                 <li><a href="#">Só na Apple</a></li>
@@ -32,6 +32,7 @@
         <section>
             <div class="circle"></div>
             <div class="main-text">
+
                 <img src="iphone13.png" alt="">
                 
                 <h3>Seu novo superpoder.</h3>
@@ -47,12 +48,24 @@
                 </div>
 
                 <div class="content">
-                    <span id="green" onclick="imgSlider('green.png'); circleChange('#445c42')"></span>
-                    <span id="pink" onclick="imgSlider('pink.png') ; circleChange('#f8ddd6')"></span>
-                    <span id="blue" onclick="imgSlider('blue.png'); circleChange('#225f7e')"></span>
-                    <span id="black" onclick="imgSlider('black.png'); circleChange('#092732')"></span>
-                    <span id="white" onclick="imgSlider('white.png'); circleChange('white')"></span>
-                    <span id="red" onclick="imgSlider('red.png'); circleChange('#ae0617')"></span>
+                    <span id="green"
+                          onmouseover="imgSlider('green.png'); circleChange('#445c42')" 
+                          onclick="imgSlider('green.png'); circleChange('#445c42')"></span>
+                    <span id="pink"
+                          onmouseover="imgSlider('pink.png'); circleChange('#f8ddd6')" 
+                          onclick="imgSlider('pink.png'); circleChange('#f8ddd6')"></span>
+                    <span id="blue"
+                          onmouseover="imgSlider('blue.png'); circleChange('#225f7e')" 
+                          onclick="imgSlider('blue.png'); circleChange('#225f7e')"></span>
+                    <span id="black"
+                          onmouseover="imgSlider('black.png'); circleChange('#092732')" 
+                          onclick="imgSlider('black.png'); circleChange('#092732')"></span>
+                    <span id="white"
+                          onmouseover="imgSlider('white.png'); circleChange('white')" 
+                          onclick="imgSlider('white.png'); circleChange('white')"></span>
+                    <span id="red"
+                          onmouseover="imgSlider('red.png'); circleChange('#ae0617')" 
+                          onclick="imgSlider('red.png'); circleChange('#ae0617')"></span>
                 </div>
 
             </div>
@@ -64,19 +77,7 @@
         </section>
     </main>
     
-    <script type="text/javascript">
-        function imgSlider(e)
-        {
-        document.querySelector('#phone').src = e;
-        }
-
-        function circleChange(color)
-        {
-            const circle = document.querySelector('.circle')
-            circle.style.background = color;
-        }
-    </script>
-
+    <script src="script.js"></script>
 
 </body>
 </html>
