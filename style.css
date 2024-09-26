@@ -201,27 +201,29 @@ main section {
 }
 
 .main-ipad img {
-    width: 35rem;
+    width: 38rem;
     margin-bottom: 3vh;
 }
+.main-ipad .text-ipad{
+    text-align: center;
+}
 
-.main-ipad .main-text{
-    
-   
-
-
+.main-ipad .text-ipad h1 {
+  font-size: 2rem;
 }
 
 .main-ipad .text-ipad h2 {
-    font-size: 5rem;
+   
+    font-size: 4rem;
     margin-bottom: 0.5rem;
 }
 
 
 
 .main-ipad .text-ipad h5{
+    
     color: #999;
-    font-size: 1.5rem;
+    font-size: 1rem;
     
     margin-bottom: 2rem;
 }
