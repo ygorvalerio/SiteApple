@@ -8,6 +8,20 @@
     font-family: sans-serif
 }
 
+html{
+   
+    overflow: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+
+.element::-webkit-scrollbar {
+    display: none;
+        
+    
+    
+}
 body {
     background-color: #e8e6e7;
 
@@ -140,7 +154,7 @@ main section {
     background: #092732;
 }
 #white {
-    background: white;
+    background: #e0dbd7;
 }
 #red{
     background: #ae0617;
@@ -169,5 +183,59 @@ main section {
 }
 
 .main-text .content span:hover {
-    background-color: #f0f0f0; /* Cor ao passar o mouse */
+    background-color: #f0f0f0; 
+}
+/* iPad style */
+
+.main-ipad{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 30rem;
+    
+}
+
+.main-ipad h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-ipad img {
+    width: 35rem;
+    margin-bottom: 3vh;
+}
+
+.main-ipad .main-text{
+    
+   
+
+
+}
+
+.main-ipad .text-ipad h2 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.main-ipad .text-ipad h5{
+    color: #999;
+    font-size: 1.5rem;
+    
+    margin-bottom: 2rem;
+}
+
+.main-ipad .text-ipad .btn {
+    padding: 10px 25px;
+    background-color: #0071e3;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+
+}
+
+.main-ipad .text-ipad .btn:hover{
+    opacity: .85;
 }
