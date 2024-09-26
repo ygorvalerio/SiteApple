@@ -214,7 +214,7 @@ main section {
 
 .main-ipad .text-ipad h2 {
    
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -241,3 +241,34 @@ main section {
 .main-ipad .text-ipad .btn:hover{
     opacity: .85;
 }
+
+.text-conteudo {
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+    
+    
+}
+
+.text-conteudo h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.text-conteudo p{
+    color: #999;
+    font-size: 1.5rem;
+    
+    margin-bottom: 3rem;
+
+}
+
+.img-ipad img {
+    width: 35em;
+    margin-left: 40rem;
+    margin-top: 0;
+    margin-bottom: 3vh;
+} 
